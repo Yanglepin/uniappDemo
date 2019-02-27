@@ -1,0 +1,202 @@
+@import '../../common/public.css';
+// 头部
+	.header{
+		width: 100%;
+		height: 100upx;
+		line-height: 100upx;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		image{
+			width: 300upx;
+			height: 75upx;
+		}
+	}
+	// 轮播图
+	.swiper-view {
+		border-bottom: 20upx solid #f0f1f2;
+		.swiper {
+			width: 100%;
+			height: 280upx;
+			image {
+				width: 100%;
+				height: 280upx;
+			}
+		}
+	}
+	//分类
+	.column-3{
+		width: 94%;
+		display: flex;
+		flex-direction: row;
+		margin: 2% 3%;
+		image{
+			width: 31.6%;
+			height: 320upx;
+			&:nth-child(2){
+				margin: 0 2.5%;
+			}
+		}
+	}
+	//最新动态
+	.news{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		border-top: 20upx solid #f0f1f2;
+		.left{
+			width: 15%;
+			image{
+				width: 140upx;
+				height: 120upx;
+			}
+		}
+		.right{
+			margin-top: 18upx;
+			width: 81%;
+			view{
+				display: flex;
+				flex-direction: row;
+				height: 50upx;
+				line-height: 50upx;
+				text{
+					white-space: nowrap;
+					height: 40upx;
+					line-height: 36upx;
+					&:nth-child(1){
+						font-size: 26upx;
+						border: 2upx solid $uni-text-color-red;
+						color: $uni-text-color-red;
+						box-sizing: border-box;
+						padding: 0upx 10upx;
+						border-radius: 10upx;
+					}
+					&:nth-child(2){
+						line-height: 40upx;
+						display: inline-block;
+						font-size: 30upx;
+						padding-left: 10upx;
+					}
+				}
+			}
+		}
+	}
+	// 名家作品
+	.img{
+		image{
+			width: 100%;
+			height: 250upx;
+			border-top: 20upx solid #f0f1f2;
+			border-bottom: 20upx solid #f0f1f2;
+		}
+	}
+	// 精品推荐
+	.recommend{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		font-size: 32upx;
+		border-bottom: 2upx solid #e4e4e4;
+		padding: 2% 0;
+		view{
+			height: 40upx;
+			line-height: 40upx;
+			margin: 0 3%; 
+			&:nth-child(1){
+				line-height: 45upx;
+				padding-left: 50upx;
+				background: url(../../static/icon1.png) 3% no-repeat;
+			}
+			&:nth-child(2){
+				font-size: 24upx;
+				color: #666;
+				padding-right: 40upx;
+				background: url(../../static/more.png) right no-repeat;
+				background-size: 23%;
+			}
+		}
+	}
+	//横向滚动
+	.scroll-view_H{
+		width: 100%;
+		margin: 3% 0upx;
+		white-space: nowrap;
+		scroll-view{
+			.list{
+				width: 26%;
+				display: inline-block;
+				margin-right: 3%;
+				white-space:normal;
+				font-size: 28upx;
+				image{
+					width: 200upx;
+					height: 200upx;
+					padding: 4upx;
+					border: 2upx solid #e4e4e4;
+					box-sizing: border-box;
+					margin-right: 3%;
+				}
+				view{
+					&:nth-child(3){
+						color: $uni-text-color-red;
+						height: 50upx;
+						line-height: 50upx;
+						font-weight: bold;
+					}
+					&:nth-child(4){
+						color: #888;
+						font-size: 26upx;
+					}
+				}
+			}
+		}
+	}
+	// 翡翠精品
+	.product-list{
+		width: 94%;
+		margin: 10upx 3%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;  //必要时拆行
+		.product{
+			width: 48%;
+			margin-bottom: 20upx;
+			.image-view{
+				width: 340upx;
+				height: 340upx;
+				image{
+					width: 100%;
+					height: 100%;
+					padding: 6upx;
+					border: 1upx solid #e4e4e4;
+					box-sizing: border-box;
+				}
+			}
+			.product-title{
+				color: #333;
+				font-size: 30upx;
+			}
+			.product-price{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				font-size: 28upx;
+				height: 60upx;
+				line-height: 60upx;
+				.product-price-favour{
+					color: $uni-text-color-red;
+				}
+				.product-price-original{
+					font-size: 26upx;
+					color: #888;
+				}
+			}
+			.product-size{
+				font-size: 26upx;
+				color: #888;
+			}
+		}
+	}

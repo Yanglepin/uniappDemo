@@ -1,0 +1,28 @@
+
+.elli{
+	overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.elli2{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.elli3{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+/* 底部按钮 */
+.btn-bottom{
+	position: fixed;
+	bottom: 20%;
+	width: 94%;
+	margin-left: 3%;
+}
